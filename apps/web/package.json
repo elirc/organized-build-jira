@@ -1,0 +1,27 @@
+// Archived pre-.NET migration. Kept for future review; not active.
+// {
+//   "name": "@buildjira/web",
+//   "private": true,
+//   "version": "0.1.0",
+//   "type": "module",
+//   "scripts": {
+//     "dev": "vite --host 0.0.0.0",
+//     "build": "tsc -b && vite build",
+//     "preview": "vite preview --host 0.0.0.0"
+//   },
+//   "dependencies": {
+//     "@buildjira/shared": "file:../../packages/shared",
+//     "@vitejs/plugin-react": "^4.5.1",
+//     "lucide-react": "^0.511.0",
+//     "react": "^19.1.0",
+//     "react-dom": "^19.1.0",
+//     "zod": "^3.25.49"
+//   },
+//   "devDependencies": {
+//     "@types/react": "^19.1.6",
+//     "@types/react-dom": "^19.1.5",
+//     "typescript": "^5.8.3",
+//     "vite": "^6.3.5"
+//   }
+// }
+// 

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BuildJira</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">BJ</div>
+          <div>
+            <strong>BuildJira</strong>
+            <span>.NET delivery</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Primary">
+          <button class="nav-item active" type="button">Board</button>
+          <button class="nav-item" type="button">Reports</button>
+          <button class="nav-item" type="button">Governance</button>
+        </nav>
+
+        <div class="project-switcher">
+          <span class="section-label">Projects</span>
+          <div id="projects"></div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <span id="breadcrumb" class="breadcrumb">Projects</span>
+            <h1 id="project-title">Project board</h1>
+          </div>
+          <div class="topbar-actions">
+            <label class="actor-box">
+              Actor
+              <select id="actor-select"></select>
+            </label>
+            <label class="search-box">
+              <span>Search</span>
+              <input id="search" placeholder="Search issues" />
+            </label>
+          </div>
+        </header>
+
+        <div id="message"></div>
+        <section id="metrics" class="metrics-row" aria-label="Project metrics"></section>
+        <section class="board-layout">
+          <div id="kanban" class="kanban" aria-label="Issue board"></div>
+          <aside id="issue-panel" class="issue-panel empty">Select an issue</aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

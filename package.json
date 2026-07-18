@@ -1,0 +1,30 @@
+// Archived pre-.NET migration. Kept for future review; not active.
+// {
+//   "name": "buildjira",
+//   "private": true,
+//   "version": "0.1.0",
+//   "type": "module",
+//   "description": "A focused Jira-style project management clone for engineering practice.",
+//   "workspaces": [
+//     "packages/*",
+//     "apps/*"
+//   ],
+//   "scripts": {
+//     "dev": "npm run build -w @buildjira/shared && concurrently -n api,web -c cyan,magenta \"npm run dev -w @buildjira/api\" \"npm run dev -w @buildjira/web\"",
+//     "build": "npm run build -ws",
+//     "test": "npm run test -ws --if-present",
+//     "lint": "eslint .",
+//     "format": "prettier --write .",
+//     "db:generate": "npm run db:generate -w @buildjira/api",
+//     "db:migrate": "npm run db:migrate -w @buildjira/api",
+//     "db:seed": "npm run db:seed -w @buildjira/api"
+//   },
+//   "devDependencies": {
+//     "@eslint/js": "^9.28.0",
+//     "concurrently": "^9.1.2",
+//     "eslint": "^9.28.0",
+//     "prettier": "^3.5.3",
+//     "typescript-eslint": "^8.33.0"
+//   }
+// }
+// 

@@ -1,0 +1,14 @@
+// Archived pre-.NET migration. Kept for future review; not active.
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "outDir": "dist",
+//     "rootDir": ".",
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "types": ["node"],
+//     "noEmit": false
+//   },
+//   "include": ["src", "prisma", "test"]
+// }
+// 

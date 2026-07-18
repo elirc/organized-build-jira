@@ -1,0 +1,45 @@
+services:
+  buildjira:
+    build:
+      context: .
+      dockerfile: apps/dotnet/BuildJira.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      BuildJira__DataFile: /app/Data/buildjira-data.json
+      BuildJira__WebOrigin: http://localhost:8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - buildjira-data:/app/Data
+
+volumes:
+  buildjira-data:
+
+# Archived pre-migration docker-compose.yml:
+# services:
+#   api:
+#     build:
+#       context: .
+#       dockerfile: apps/api/Dockerfile
+#     environment:
+#       DATABASE_URL: file:./dev.db
+#       API_PORT: 4000
+#       WEB_ORIGIN: http://localhost:8080
+#     ports:
+#       - "4000:4000"
+#     volumes:
+#       - api-data:/app/apps/api/prisma
+#
+#   web:
+#     build:
+#       context: .
+#       dockerfile: apps/web/Dockerfile
+#       args:
+#         VITE_API_URL: http://localhost:4000
+#     ports:
+#       - "8080:80"
+#     depends_on:
+#       - api
+#
+# volumes:
+#   api-data:

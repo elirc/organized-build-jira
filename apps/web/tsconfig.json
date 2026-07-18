@@ -1,0 +1,13 @@
+// Archived pre-.NET migration. Kept for future review; not active.
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "jsx": "react-jsx",
+//     "noEmit": true,
+//     "module": "ESNext",
+//     "moduleResolution": "Bundler",
+//     "types": ["vite/client"]
+//   },
+//   "include": ["src"]
+// }
+// 
